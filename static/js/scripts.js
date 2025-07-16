@@ -24,7 +24,7 @@ function login() {
     const wd = CryptoJS.AES.decrypt(w, stringbean).toString(CryptoJS.enc.Utf8);
 
     if (inputUser === du && inputPass === dp) {
-        window.location.href = wd; // redirect to home
+        window.location.href = wd;
     } else {
         console.log("Incorrect credentials.");
         errorelem.textContent = "Incorrect username or password.";
